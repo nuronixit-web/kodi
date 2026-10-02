@@ -10,7 +10,7 @@
       "id": "org.xbmc.kodi",
       "title": "Kodi 22 RC1",
       "iconUri": "https://raw.githubusercontent.com/xbmc/xbmc/master/tools/webOS/packaging/icon.png",
-      "manifestUrl": "https://cdn.jsdelivr.net/gh/nuronixit-web/kodi/org.xbmc.kodi.manifest.json"
+      "manifestUrl": "https://raw.githubusercontent.com/nuronixit-web/kodi/main/org.xbmc.kodi.manifest.json"
     }
   ]
 }
