@@ -1,0 +1,36 @@
+name: Publish Kodi RC1 package
+
+on:
+  push:
+    paths:
+      - '.github/workflows/publish-kodi.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download package
+        shell: bash
+        run: |
+          set -euo pipefail
+          FILE='org.xbmc.kodi_20260927-28ea2eac-master_arm.ipk'
+          curl -fL --retry 5 --retry-delay 2 \
+            'https://github.com/nuronixit-web/webos-kodi-rc1/releases/download/v22.0-rc1-webos/org.xbmc.kodi_20260927-28ea2eac-master_arm.ipk' \
+            -o "$FILE"
+          echo "IPK_FILE=$FILE" >> "$GITHUB_ENV"
+
+      - name: Publish GitHub release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          TAG='v22.0-rc1-webos'
+          if ! gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title 'Kodi 22 RC1 for webOS' --notes 'Official Team Kodi RC1 webOS build.'
+          fi
+          gh release upload "$TAG" "$IPK_FILE" --repo "$GITHUB_REPOSITORY" --clobber
