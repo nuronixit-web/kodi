@@ -1,9 +1,9 @@
 {
   "paging": {
     "page": 1,
-    "count": 1,
+    "count": 2,
     "maxPage": 1,
-    "itemsTotal": 1
+    "itemsTotal": 2
   },
   "packages": [
     {
@@ -11,6 +11,12 @@
       "title": "Kodi 22 RC1",
       "iconUri": "https://raw.githubusercontent.com/xbmc/xbmc/master/tools/webOS/packaging/icon.png",
       "manifestUrl": "https://raw.githubusercontent.com/nuronixit-web/kodi/main/org.xbmc.kodi.manifest.json"
+    },
+    {
+      "id": "com.lennylxx.iptv",
+      "title": "webOS IPTV Player",
+      "iconUri": "https://raw.githubusercontent.com/lennylxx/webos-iptv-player/main/assets/icon130.png",
+      "manifestUrl": "https://raw.githubusercontent.com/nuronixit-web/kodi/main/com.lennylxx.iptv.manifest.json"
     }
   ]
 }
