@@ -1,0 +1,12 @@
+{
+  "id": "tj.nuronix.ambient",
+  "version": "1.0.0",
+  "vendor": "Nuronix",
+  "type": "web",
+  "main": "index.html",
+  "title": "Nuronix Ambient",
+  "appDescription": "Manual launch fullscreen video ambient for LG webOS",
+  "icon": "icon.png",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": true
+}
