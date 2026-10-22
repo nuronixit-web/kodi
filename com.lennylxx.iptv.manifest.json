@@ -1,0 +1,15 @@
+{
+  "id": "com.lennylxx.iptv",
+  "version": "1.17.0",
+  "type": "web",
+  "title": "webOS IPTV Player",
+  "appDescription": "IPTV player with M3U, Xtream, XMLTV, and catch-up.",
+  "iconUri": "https://raw.githubusercontent.com/lennylxx/webos-iptv-player/main/assets/icon130.png",
+  "sourceUrl": "https://github.com/lennylxx/webos-iptv-player",
+  "rootRequired": false,
+  "ipkUrl": "https://github.com/lennylxx/webos-iptv-player/releases/download/v1.17.0/com.lennylxx.iptv_1.17.0_all.ipk",
+  "ipkHash": {
+    "sha256": "7f38a23df46fedc6381a660b280ce3e8abdeb88aff519f3a41ee3a5c15391299"
+  },
+  "ipkSize": 725970
+}
