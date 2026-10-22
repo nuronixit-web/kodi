@@ -1,0 +1,19 @@
+{
+  "id": "tj.nuronix.ambient",
+  "version": "1.0.0",
+  "vendor": "Nuronix",
+  "type": "web",
+  "main": "index.html",
+  "title": "Nuronix Ambient",
+  "appDescription": "Full-screen ambient video player for LG webOS.",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "iconColor": "#0a0a10",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": false,
+  "transparent": false,
+  "handlesRelaunch": false,
+  "vendorExtension": {
+    "allowCrossDomain": true
+  }
+}
